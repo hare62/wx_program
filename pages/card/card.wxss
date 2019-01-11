@@ -1,0 +1,39 @@
+swiper {
+		height: 250rpx;
+		margin: 30rpx 0;
+	}
+    .content{
+      color:white;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+    }
+    .content .main{
+       margin-top:10rpx;
+       display: flex;
+       flex-direction: column;
+       flex-wrap:wrap;
+       margin-left: 90rpx;
+    }
+    .content .main view{
+      margin-top:10rpx;
+    }
+    .content .main view:nth-child(2){
+      font-size:50rpx;
+    }
+    .content .side{
+      writing-mode: vertical-lr;
+      margin-right: 60rpx;
+      margin-top: 50rpx;
+    }
+    .content .side text{
+      display: block;
+      font-size:40rpx;
+    }
+.border{
+  /* border: 1px dashed #ccc; */
+ 
+}
+   
+   
+   

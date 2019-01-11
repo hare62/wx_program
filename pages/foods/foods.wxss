@@ -1,0 +1,88 @@
+/* pages/foods/foods.wxss */
+swiper{
+  width:100%;
+  height: 300rpx;
+  /* background: red; */
+}
+swiper-item image{
+  width:100%;
+  height: 300rpx;
+}
+.scroll-view_H{
+  width: 100%;
+  height: 400rpx;
+  overflow: auto;
+  display: flex;
+  flex-direction:row;
+  white-space: nowrap;
+  /* background: #cccccc; */
+  margin: 20rpx;
+}
+.section__title{
+  font-size: 35rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  height:95%;
+  width:330rpx;
+  /* background: #ff2255; */
+  margin-left:20rpx;
+}
+.scroll-view-item_H image{
+  width: 100%;
+  height: 70%;
+  /* background: oldlace; */
+  border-radius: 10px;
+}
+.scroll-view-item_H .goods_name{
+  width: 100%;
+  white-space: wrap;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font-size: 30rpx;
+}
+.main_img{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main_img .top{
+  width: 100%;
+  height: 300rpx;
+}
+.main_img .top image{
+  width: 100%;
+  height: 100%;
+}
+.main_img .bottom{
+   display: flex;
+   height: 100%;
+   flex-wrap: wrap;
+   flex-direction: row;
+
+}
+.main_img .bottom .li{
+  width: 100%;
+  margin: 10rpx;
+  height: 400rpx;
+}
+.main_img .bottom .li image{
+  width: 100%;
+  height: 80%;
+}
+.text{
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.activeclass{
+  width: 48% !important;
+}
+
+

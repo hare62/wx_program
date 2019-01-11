@@ -1,0 +1,30 @@
+<!--pages/juan/juan.wxml-->
+<view class='seckill' style='background: url("{{juan.background_img}}");background-size:100% 100%;' bindtap="sale" mode="aspectFill">
+      <text>{{juan.title}}</text>
+      <text>{{juan.face_value}}元抵扣卷</text>
+      <text>{{juan.sale_price}}元购买</text>
+      <!-- <text class='buynow'>立即购买</text> -->
+</view> 
+<view class='span'>
+<view>
+<text>可叠加|过期失效</text>
+</view>
+<view class='btn'>
+<button type='mini'>-</button>
+<text>2</text>
+<button type='mini'>+</button>
+</view>
+
+</view>
+ <view class='blod'>有效期</view>  
+<view class=''><text>{{juan.start_time}}</text> 至 <text>{{juan.end_time}}</text></view>
+<view class='blod'>使用规则</view>
+<view class='med'>1、优惠卡仅限于使用预订展示的对象商品。</view>
+<view class='med'>2、优惠卡仅限在有效期间内使用，过期作废。</view>
+<view class='med'>3、如有优惠卡过期失效，不另行补发。</view>
+<view class='med'>4、优惠卡不能兑换现金，不找零，不退换。</view>
+<view class='med'>5、拒绝接受伪造或者入手渠道可疑的优惠券的使用。</view>
+<view class='med'>6、在[我的卡包]可查看优惠卡- -览表</view>
+<view class='med'>7、优惠卡将可在支付时出示使用。</view>
+<button class="buy" type='default' style='background:rgb(233, 80, 24)'>立即支付(40元)</button>
+

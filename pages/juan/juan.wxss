@@ -1,0 +1,57 @@
+/* pages/juan/juan.wxss */
+.seckill{
+  position: relative;
+  font-size: 50rpx;
+  color:white;
+ 
+  display: flex;
+  flex-direction: column;
+width: 100%;
+padding-top:20rpx;
+text-indent: 30rpx;
+height: 300rpx;
+background: olivedrab;
+}
+.buynow{
+  position: absolute;
+  top: 0;
+  right: 200rpx;
+  width: 200rpx;
+  height: 200rpx;
+  background: red;
+}
+Page{
+  padding: 10rpx;
+  height: 100%;
+  width: 100%;
+}
+.seckill text{
+  margin-top:30rpx;
+}
+.span{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.span .btn {
+  display: flex;
+  justify-content: right;
+
+}
+.span .btn button{
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.med{
+  margin-bottom: 30rpx;
+  height: 55rpx;
+  width: 100%;
+  display: block;
+  font-size:30rpx;
+  text-align: left;
+  line-height: 55rpx;
+}
+.blod{
+  font-weight: bold;
+}

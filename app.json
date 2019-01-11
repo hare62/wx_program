@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/goods/goods",
+    "pages/foods/foods",
+    "pages/moreDetails/moreDetails",
+    "pages/lu/lu",
+    "pages/message/message",
+    "pages/remessage/remessage",
+    "pages/index/index",
+    "pages/juan/juan",
+    "pages/text/index",
+    "pages/details/details",
+    "pages/logs/logs",
+    "pages/card/card"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/goods/goods",
+        "selectedIconPath":"images/index_green.png",
+        "text": "良品",
+        "iconPath":"images/index.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/ticket_green.png",
+        "text": "卡卷",
+        "iconPath": "images/ticket.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+
+}

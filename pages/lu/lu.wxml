@@ -1,0 +1,22 @@
+<!--pages/moreDetails/moreDetails.wxml-->
+<view class='main'>
+     <view class='main_left'><image src='../image/img1.png'></image></view>
+     <view class='main_right'>
+            <view>100元全场通用</view>
+            <view>有效期：<text> 2018.03.19-2018.04.19</text></view>
+     </view>
+</view>
+<view class='code'>二维码</view>
+<view class="text">QR</view>
+<view class='ma'>
+   <view class="erma"></view>
+</view>
+<view class='hengxian'></view>
+<view>使用规则</view>
+<view>1.优惠卡仅限于使用预订的对象</view>
+<view>1.优惠卡仅限于使用预订的对象</view>
+<view>1.优惠卡仅限于使用预订的对象</view>
+<view>1.优惠卡仅限于使用预订的对象</view>
+<view>1.优惠卡仅限于使用预订的对象</view>
+<view>1.优惠卡仅限于使用预订的对象</view>
+<view>1.优惠卡仅限于使用预订的对象</view>

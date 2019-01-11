@@ -1,0 +1,46 @@
+<!--pages/goods/goods.wxml-->
+ <i class= " fa fa-map-marker" aria-hidden="true" style="display:{{state}}"></i>
+ <i class=" fa fa-search" aria-hidden="true" bindtap="searchs" hidden="{{rehidden}}" style="display:{{state}}"></i>
+<swiper class='relative' display-multiple-items="display-multiple-items" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{res_show_top}}" >
+    <swiper-item  data-goodsid='{{item.id}}' bindtap='tiaozhuan'>
+      <image src="{{item.pic}}" class="slide-image" style='width:100%;' mode="aspectFit	" />
+    </swiper-item>
+  </block>
+</swiper>
+ <view class="section" hidden="{{hidden}}">
+  <input placeholder="{{inputmsg}}"focus="{{focus}}" type="text"  placeholder-style="color:#fff;" auto-focus search  bindconfirm="toSearch" bindinput='listenerSearchInput' />
+</view>
+ 
+<view class='tit_img'>
+  <text class='tit_sib'></text>
+  <text>{{todrec}}</text>
+</view>
+<!-- 今日推荐 -->
+
+<view class="scroll_box">
+  <view class="item_list" wx:for="{{res_today}}" data-goodsid='{{item.id}}' bindtap='tiaozhuan'>
+    <image class='scroll_box_img' src="{{item.pic}}" class="item_book_img" mode="aspectFill"></image>
+  </view>
+</view>
+<!-- 精选系列 -->
+<view class='tit_img'>
+  <text class='tit_sib'></text>
+  <text>{{specillist}}</text>
+</view>
+<!-- 两行图文describle -->
+<view class='content' wx:for='{{res_bottom}}' wx:for-index='idx' wx:for-item='itm'>
+    <view style='width:100%' class="{{index != 0 ? 'activeclass' : ''}}" wx:for="{{res_bottom[idx]}}"                          wx:for-index='index' wx:for-item='item' data-goodsid='{{item.id}}' bindtap='tiaozhuan'>
+              <view class='spl_top' wx:if='{{index == 0}}'>
+                      <image style='width:100%;height:100%;position:relative;' src='{{item.pic}}'>
+                          <view class='position' bindtap='learnMore' src='{{item.pic}}'data-imgsrc="{{item.pic}}" data-goodstypeid='{{item.id}}'>了解更多.....</view>
+                      </image>
+                      
+              </view>
+              <view class='col' wx:else >
+                      <image src='{{item.pic}}'></image>
+                      <text>{{item.goods_name}}</text>
+                      <text>{{item.price}}</text>
+              </view>
+    </view>
+</view>

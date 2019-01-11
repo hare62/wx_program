@@ -1,0 +1,92 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wx2d3e85d803c2fbf7",
+	"projectname": "Hare",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": 0,
+					"name": "详情页",
+					"pathName": "pages/details/details",
+					"query": "goodsid=77"
+				},
+				{
+					"id": -1,
+					"name": "卷",
+					"pathName": "pages/juan/juan",
+					"query": "juan"
+				},
+				{
+					"id": -1,
+					"name": "quictStart",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/message/message",
+					"pathName": "pages/message/message",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "foods",
+					"pathName": "pages/foods/foods",
+					"query": "goodsid=77"
+				},
+				{
+					"id": -1,
+					"name": "remessage",
+					"pathName": "pages/remessage/remessage",
+					"query": "goodsid=77"
+				},
+				{
+					"id": -1,
+					"name": "card",
+					"pathName": "pages/card/card",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lu",
+					"pathName": "pages/lu/lu"
+				}
+			]
+		}
+	}
+}

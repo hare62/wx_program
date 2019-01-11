@@ -1,0 +1,53 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+   height: 4rem;
+}
+.main_left{
+  width: 20%;
+  height: 4rem;
+ 
+  
+}
+.main_left image{
+  width: 100%;
+  height: 100%;
+}
+.main_right{
+  width: 75%;
+  height: 2rem;
+  line-height: 2rem;
+}
+.code{
+  width: 96%;
+  padding: 2%;
+  height: 5rem;
+  background: red;
+}
+.text{
+  width: 96%;
+  padding: 2%;
+}
+.ma{
+  width: 96%;
+  padding: 2%;
+  position: relative;
+  margin-top:0.2rem;
+  height: 7rem;
+}
+.erma{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 7rem;
+  width: 7rem;
+  background: olive;
+}
+.hengxian{
+  border: 2px solid gold;
+ 
+}

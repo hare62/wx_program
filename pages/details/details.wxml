@@ -1,0 +1,49 @@
+<!--pages/details/details.wxml-->
+<view class='main'>
+   <view class="main_img"><image src="{{data[0].pic}}" mode="aspectFill"></image></view>
+   <view class='words'>{{goods_name}}</view>
+   <view  style="color:#717171;font-size:30rpx; margin-top: 20rpx;">{{data[0].share_describe}}</view>
+    <view class='words'>门店价${{price}}/{{net_content}}{{unit}}</view>
+   <view class='onsale font-color'>在售规格</view> 
+   <view class='onsale'>{{goods_name[1].description}}</view> 
+   <view class='out light_font'   data-good-id="{{item.id}}" data-index="{{index}}"  wx:for="{{arrshuzu}}"  bindtap='click'>{{item.description}} {{item.net_content}}个
+      <i class="{{ item.is_index_show == 1 ? 'icon-selectOn_green':'' }}" />
+    </view> 
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"interval="{{interval}}"duration="{{duration}}">
+  <block wx:for="{{data[2]}}"  wx:key='{{item.id}}'>
+    <swiper-item class="content" style='background: url("{{data[2][0].background_img}}");background-size: cover; width="355" height="300" '  >
+            <view class='main'>
+                            <view class='name'><text>{{item.title}}</text></view>
+                            <view class='amount'><text>{{item.face_value}}元抵扣券</text></view>
+                            <view class='money'><text>{{item.sale_price}}元购买</text></view>
+             </view>  
+             <view class='side'><text>立即购买</text></view>
+    </swiper-item>
+  </block>
+</swiper>
+   <view class='space_between light_font'>
+   <text >可叠加|过期失效</text>
+   <text>月销量 <text>{{data[2][0].month_sale_number}}</text></text>
+   </view>
+   <view class='font-color'>有效期</view>  
+   <view class='light_font'><text>{{data[2][0].start_time}}</text> 至 <text>{{data[2][0].end_time}}</text></view> 
+   <view class='font-color'>使用规则</view> 
+   <text class='light_font' space="nbsp" selectable="true" decode="true">{{data[2][0].user_know}} 
+        <view class='button'>aaaaaaaaaaaaaaaaaaaaaaaaaaa</view>
+   </text>
+   <view class='font-color'>附近的店铺</view> 
+   <block >
+     <view class='recom_img' >
+        <image   src="{{item}}" wx:for="{{data[0].content}}" class="slide-image" mode="widthFix" />  
+     </view> 
+  </block>
+   <view >推荐菜谱</view> 
+   <swiper class='bootom_swiper' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{data[3]}}">
+    <swiper-item>
+      <image src="{{item.pic}}" class="bottom-image"  class='img_bot'/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/moreDetails/moreDetails.wxml-->
+<view class="title">
+     <image src="{{img}}" mode="aspectFit	" ></image>
+</view>
+<view class='conten'>
+     <view class='block'wx:for="{{moreData}}" wx:for-index="idx" wx:for-item="itemName">
+        <image src="{{moreData[idx].pic}}"  ></image>
+        <view>{{moreData[idx].goods_name}}</view>
+        <view>
+            <text class='font'>${{moreData[idx].price}}</text>
+            <text>/1斤</text>
+        </view>
+    </view>
+</view>

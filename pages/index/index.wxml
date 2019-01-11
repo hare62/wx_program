@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto"bindtap="change" >{{motto}}</text>
+  </view>
+  <navigator url="../text/index">跳转到新闻业</navigator>
+  <button type='primary' size='mini'bindtap="aaa" >跳转到日志页面</button>
+</view>
+<button type="mini" bindtap='changeimg'>
+  点击切换隐藏盒子
+</button>
+<view class='box' wx:if='{{isShow}}'></view>
+<view class='box_hidden' wx:else>我是else条件不成立的盒子的盒子</view>
+<button >
+  分隔符
+</button>
+<view>index默认的标项目</view>
+<view>item默认的value值</view>
+<button >遍历数组</button>
+<view class='for_arr' wx:for="{{arr}}"  wx:key="{{index}}">
+{{index}}
+{{item}}
+</view>
+<button >遍历对象</button>
+<view class='for_arr' wx:for="{{arr_data}}" wx:key="{{index}}">
+ {{item.name}}
+ {{item.age}}
+ {{item.sex}}
+ {{index}}
+</view>

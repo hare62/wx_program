@@ -1,0 +1,52 @@
+
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"interval="{{interval}}"duration="{{duration}}">
+  <block wx:for="{{moreData[2]}}"  wx:key='{{item.id}}'>
+    <swiper-item class="content" style='background: url("{{moreData[2][0].background_img}}");background-size: cover; width="355" height="300" '  >
+            <view class='main'>
+                            <view class='name'><text>{{item.title}}</text></view>
+                            <view class='amount'><text>{{item.face_value}}元抵扣券</text></view>
+                            <view class='money'><text>{{item.sale_price}}元购买</text></view>
+             </view>  
+             <view class='side'><text>立即购买</text></view>
+    </swiper-item>
+  </block>
+</swiper>
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"interval="{{interval}}"duration="{{duration}}">
+  <block wx:for="{{moreData[2]}}"  wx:key='{{item.id}}'>
+    <swiper-item class="content" style='background: url("{{moreData[2][0].background_img}}");background-size: cover; width="355" height="300" '  >
+            <view class='main'>
+                            <view class='name'><text>{{item.title}}</text></view>
+                            <view class='amount'><text>{{item.face_value}}元抵扣券</text></view>
+                            <view class='money'><text>{{item.sale_price}}元购买</text></view>
+             </view>  
+             <view class='side'><text>立即购买</text></view>
+    </swiper-item>
+  </block>
+</swiper>
+<view>失效的卡卷 
+
+</view>
+ <swiper indicator-dots="{{indicatorDots}}" style='border:3px dashed #999' autoplay="{{autoplay}}"interval="{{interval}}"duration="{{duration}}">
+  <block wx:for="{{moreData[2]}}"  wx:key='{{item.id}}'>
+    <swiper-item class="content" style='background: url(../image/img.png);background-size: cover; width="355" height="300" '  >
+            <view class='main'>
+                            <view class='name'><text>{{item.title}}</text></view>
+                            <view class='amount'><text>{{item.face_value}}元抵扣券</text></view>
+                            <view class='money'><text>{{item.sale_price}}元购买</text></view>
+             </view>  
+             <!-- <view class='side'><text>立即购买</text></view> -->
+    </swiper-item>
+  </block>
+</swiper>
+ <swiper indicator-dots="{{indicatorDots}}" style='border:3px dashed #999' autoplay="{{autoplay}}"interval="{{interval}}"duration="{{duration}}">
+  <block wx:for="{{moreData[2]}}"  wx:key='{{item.id}}'>
+    <swiper-item class="content"  style='background: url(../image/img.png);background-size: cover; width="355" height="300" '  >
+            <view class='main ' >
+                            <view class='name'><text>{{item.title}}</text></view>
+                            <view class='amount'><text>{{item.face_value}}元抵扣券</text></view>
+                            <view class='money'><text>{{item.sale_price}}元购买</text></view>
+             </view>  
+             <!-- <view class='side'><text>立即购买</text></view> -->
+    </swiper-item>
+  </block>
+</swiper>

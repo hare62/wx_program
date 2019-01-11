@@ -1,0 +1,189 @@
+/* pages/details/details.wxss */
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+  width: 100%;
+}
+.main{
+  overflow: hidden;
+  margin:0rpx 10rpx;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+image{
+  width: 100%;
+  height:360rpx;
+}
+.main_img{
+  height: 350rpx;
+  width: 100%;
+}
+.words{
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+/* 立即购买背景图 */
+.seckill{
+  position: relative;
+  font-size: 50rpx;
+  color:white;
+  /* padding: 40rpx 0rpx 0rpx 100rpx; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300rpx;
+
+}
+.space_between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.buynow{
+  position: absolute;
+  top: 40rpx;
+  right:40rpx;
+  height: 100rpx;
+  width: 40rpx;
+  /* background: red; */
+}
+.out{
+  position: relative;
+}
+.btn{
+  position: absolute;
+  top:10rpx;
+  display:block;
+  right: 10rpx;
+  background: green;
+  border-radius: 50% ;
+  height: 25rpx;
+  width: 25rpx;
+  margin: 5rpx;
+  border: 2px solid green;
+}
+.btn1{
+  position: absolute;
+  top:5rpx;
+  display:block;
+  right: 5rpx;
+  
+  border-radius: 50% ;
+  height: 40rpx;
+  width: 40rpx;
+  margin: 5rpx;
+  border: 2px solid green;
+}
+
+.bottom-image{
+  height: 300px;
+}
+.bootom_swiper{
+  height: 200px;
+}
+.img_bot{
+  height: 100%;
+  width: 100%;
+}
+.red{
+  color:red;
+}
+/* 师傅给的 代码 */
+swiper {
+		height: 250rpx;
+		margin: 30rpx 0;
+	}
+	
+	swiper .wx-swiper-dot {
+		border-radius: 0;
+		height: 8rpx;
+		width: 8rpx;
+	}
+	
+	.ticket-item {
+		padding: 0 20rpx;
+		box-sizing: border-box;
+	}
+	
+	.ticket-item .ticket-info {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fff;
+	}
+		.ticket-item .ticket-info .main {
+			margin-left: 80rpx;
+		}
+		.ticket-item .ticket-info .name {
+			margin: 10rpx 0;
+		}
+		.ticket-item .ticket-info .main .amount {
+			font-size: 1.2rem;
+			margin: 10rpx 0;
+		}
+		.ticket-item .ticket-info .side {
+			margin-right: 50rpx;
+			writing-mode: vertical-rl;
+			font-size: 1rem;
+		}
+    /*  */
+    .content{
+      color:white;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+    }
+    .content .main{
+       margin-top:10rpx;
+       display: flex;
+       flex-direction: column;
+       flex-wrap:wrap;
+       margin-left: 90rpx;
+    }
+    .content .main view{
+      margin-top:10rpx;
+    }
+    .content .main view:nth-child(2){
+      font-size:50rpx;
+    }
+    .content .side{
+      writing-mode: vertical-lr;
+      margin-right: 60rpx;
+      margin-top: 50rpx;
+    }
+    .content .side text{
+      display: block;
+      font-size:40rpx;
+    }
+
+   .icon-selectOn_green {
+      float:right;
+      margin-right:20px;
+
+    }
+    .font-color{
+      color: #282828;
+      margin-top: 20rpx;
+    }
+    .light_font{
+      color:#717171;
+       margin-top: 20rpx;
+    }
+    .button{
+      z-index: 100;
+    }
+    .recom_img{
+      width: 100%;
+      font-size: 0;
+    }
+    .slide-image{
+      max-height: 100%;
+      max-width: 100%;
+}
